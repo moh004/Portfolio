@@ -57,12 +57,6 @@ VITE_EMAILJS_PUBLIC_KEY=your_public_key
 npm run dev
 ```
 
-## 📬 Contact
-
-- GitHub: https://github.com/yourusername
-- LinkedIn: https://linkedin.com/in/yourusername
-- Email: your@email.com
-
 ---
 
 Made with ❤️ by Moh.
