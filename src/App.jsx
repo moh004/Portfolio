@@ -2,7 +2,7 @@ import './assets/App.css'
 import Navbar from './component/Navbar'
 import Hero from './component/Hero'
 import Projects from './component/Project'
-import MySkills from './component/skills'
+import MySkills from './component/Skills'
 import HeroKingsLanding from './component/HeroKingsLanding'
 import Contact from './component/Contact'
 import { useState,useEffect } from "react";
