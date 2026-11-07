@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* Light mode */
+  --bgColor: #F3F5F0;
+  --Surface: #FFFFFF;
+  --Accent: #5eea0d;
+  --Text: #202A23;
+  --hover: #B77946;
+  --border: #DCE5DA;
+  --code-bg: #EBEFE8;
+  --Background: #bdc0c8;
+  --Border: #343740;
+  --Muted: #92949D;
+}
+
+.dark {
+  /* Dark mode */
+  --bgColor: #131D30;
+    --Surface: #0B1120;
+    --Accent: #469a49;
+    --Text: #D8DFD9;
+    --hover: #6476ffd3;
+    --border: #182845;
+  --code-bg: #233c05;
+  --Background: #111318;
+}
+/* 
+:root {
+    
+    --bgColor: #F5F7F5;
+    --Surface: #fffffffa;
+    --Accent: #347D45;
+    --Text: #18221B;
+    --hover: #6475FF;
+    --test: #eeff00;
+    --border: #453c57;
+  --code-bg: #f4f3ec;
+}
+
+.dark {
+    --bgColor: #131D30;
+    --Surface: #0B1120;
+    --Accent: #A3E6A5;
+    --Text: #D8DFD9;
+    --hover: #6476ffd3;
+    --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+}
+ */
+body {
+    background-color: var(--Surface);
+    color: var(--Text);
+    transition: background-color 0.3s, color 0.3s;
+}
+button{
+    cursor: pointer;
+}

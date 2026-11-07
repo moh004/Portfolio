@@ -1,0 +1,32 @@
+[
+    {
+        "name": "stock-trend-market",
+        "tools": ["vue.js","Java Script","css","tailwind","api"],
+        "repoLink": "https://github.com/moh004/stock-trend-market",
+        "site": "https://stock-trend-market.vercel.app/",
+        "about": "A cryptocurrency trading simulator that displays real-time crypto prices and allows users to practice buying and selling cryptocurrencies using virtual credits. Users can build their own portfolios, track their investments, and see how much their virtual money grows or declines based on real-world market movements."
+    },
+    {
+        "name": "Rock-Paper-Scissors-game",
+        "tools": ["Java Script","css","html"],
+        "repoLink": "https://github.com/moh004/Rock-Paper-Scissors-game",
+        "site": "https://rock-paper-scissors-game-beta-eight.vercel.app/",
+        "about": "This one is a Rock Paper Scissors game. the idea of this came from FrontEnd Mentor" 
+    },
+    {
+        "name": "Age-calculator-app",
+        "tools": ["Java Script","css","html"],
+        "repoLink": "https://github.com/moh004/Age-calculator-app",
+        "site": "https://age-calculator-app-three-taupe.vercel.app/",
+        "about": "An age calculator built as a Frontend Mentor challenge. It allows users to calculate their exact age in years, months, and days by entering their date of birth."
+    },
+    {
+         "name": "Auth-practice",
+        "tools": ["vue.js","Java Script","css","html"],
+        "repoLink": "https://github.com/moh004/Auth-practice",
+        "site": "https://auth-practice-mu.vercel.app/",
+        "about": "A user authentication system built with Node.js and Express. It uses cookie-based sessions instead of JWTs for managing user authentication and maintaining login states."
+    }
+        
+
+]
