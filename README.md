@@ -1,16 +1,68 @@
-# React + Vite
+# Moh's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal developer portfolio built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+Designed to showcase my projects, technical skills, and provide a way to get in touch.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- Responsive design
+- Dark and light mode
+- Projects showcase
+- Technologies and skills section
+- Contact form powered by EmailJS
+- Smooth navigation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Built With
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- JavaScript
+- Tailwind CSS
+- EmailJS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/your-repo.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd your-repo
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure environment variables
+
+Create a `.env` file in the root directory:
+
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+### 5. Start the development server
+
+```bash
+npm run dev
+```
+
+## 📬 Contact
+
+- GitHub: https://github.com/yourusername
+- LinkedIn: https://linkedin.com/in/yourusername
+- Email: your@email.com
+
+---
+
+Made with ❤️ by Moh.
