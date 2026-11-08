@@ -3,7 +3,7 @@ import { useMemo } from "react"
 // Optional: add this to your index.html <head> for the title font
 // <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
 
-function Snow({ count = 1000 }) {
+function Snow({ count = 500 }) {
     const flakes = useMemo(
         () =>
             Array.from({ length: count }, (_, i) => ({
