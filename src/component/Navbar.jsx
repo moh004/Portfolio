@@ -1,4 +1,5 @@
 import ThemeToggle from "./ThemeToggle"
+import LanguageSwitcher from "./LngSwitcher"
 
 function Navbar({isDark,setIsDark}) {
     return (
@@ -51,17 +52,7 @@ function Navbar({isDark,setIsDark}) {
                 {/* Controls */}
                 <div className="flex items-center gap-4">
 
-                    <button className="
-                        text-xs font-semibold tracking-wider
-                        px-3 py-2 rounded-lg
-                        border border-[var(--Surface)]
-                        hover:border-[var(--Accent)]
-                        hover:bold    
-                        hover:text-[var(--Accent)]
-                        transition-all duration-300
-                    ">
-                        ENG
-                    </button>
+                    <LanguageSwitcher/>
 
                     <ThemeToggle setIsDark={setIsDark} isDark={isDark} />
 

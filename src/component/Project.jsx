@@ -1,24 +1,18 @@
 import githubRepo from "../data/githubRepo.json";
+import { useTranslation } from "react-i18next";
 
 function Projects() {
+    const {t} = useTranslation()
     return (
         <section id="projects" className="py-16">
 
             <div className="flex justify-between items-center mb-8">
                 <div>
-                    <h2 className="text-3xl font-bold">Featured Projects</h2>
+                    <h2 className="text-3xl font-bold"> {t("project.header")}</h2>
                     <p className="text-sm text-[var(--text-secondary)] mt-2">
-                        Here are some of the projects I've built. 
-                        Each one helped me learn something new.
+                        {t("project.note")}
                     </p>
                 </div>
-
-                <a href="https://github.com/moh004?tab=repositories"
-                   target="_blank"
-                   rel="noreferrer"
-                   className="text-sm text-indigo-400 hover:text-indigo-300">
-                    View All Projects →
-                </a>
             </div>
 
             {/* Projects Grid */}
@@ -33,8 +27,15 @@ function Projects() {
                         script={repo.about}
                     />
                 ))}
+                
+                
             </div>
-
+                <a href="https://github.com/moh004?tab=repositories"
+                   target="_blank"
+                   rel="noreferrer"
+                   className="text-sm text-indigo-500 hover:text-indigo-300 flex justify-center p-6">
+                    {t("project.viewAll")}
+                </a>
         </section>
     );
 }

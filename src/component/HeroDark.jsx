@@ -1,4 +1,5 @@
 import { useMemo } from "react"
+import { useTranslation } from "react-i18next"
 
 // Optional: add this to your index.html <head> for the title font
 // <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
@@ -116,6 +117,8 @@ function Pines({ side }) {
 }
 
 function Hero() {
+    const {t} = useTranslation()
+
     return (
         <section className="relative isolate min-h-screen overflow-hidden bg-gradient-to-b from-[#05080f] via-[#0c1a2b] to-[#1f3b55] text-slate-100">
             <style>{`
@@ -170,25 +173,22 @@ function Hero() {
                         className="text-4xl leading-tight text-sky-50 md:text-6xl"
                         style={{ fontFamily: "Cinzel, 'Times New Roman', serif", fontWeight: 700 }}
                     >
-                        Hi, I'm Mohsen.
+                      {t("heroDark.intro")}
                     </h2>
                     <p className="mt-4 max-w-md text-lg leading-relaxed text-slate-300">
-                        The North remembers. So should the things we build. 
-                        I craft digital experiences with purpose, 
-                        character, and an eye for the details that endure.
-                    </p>
+                    {t("heroDark.script")}</p>
                     <div className="mt-8 flex flex-wrap gap-4">
                         <a
                             href="https://github.com/moh004"
                             className="rounded-sm border border-sky-200/60 bg-sky-100 px-6 py-3 font-semibold text-[#0c1a2b] transition hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-200"
                         >
-                            GitHub
+                          {t("heroDark.github-btn")}
                         </a>
                         <a
                             href="mailto:you@example.com"
                             className="rounded-sm bg-[#0B1320] border border-amber-400/70 px-6 py-3 font-semibold text-amber-200 transition hover:bg-amber-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300"
                         >
-                            Send a raven
+                            {t("heroDark.email-btn")}
                         </a>
                     </div>
                 </div>

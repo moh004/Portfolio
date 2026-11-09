@@ -14,6 +14,13 @@
         "about": "This one is a Rock Paper Scissors game. the idea of this came from FrontEnd Mentor" 
     },
     {
+        "name": "Foreign-Exchange-Rate",
+        "tools": ["Java Script","scss","html","React","API","Chart.js"],
+        "repoLink": "https://github.com/moh004/Foreign-Exchange-Rate",
+        "site": "https://foreign-exchange-rate-moh-eight.vercel.app/",
+        "about": "A responsive foreign exchange rate converter built with React. Convert between different currencies using real-time exchange rate data, with historical exchange rate charts to visualize currency trends." 
+    },
+    {
         "name": "Age-calculator-app",
         "tools": ["Java Script","css","html"],
         "repoLink": "https://github.com/moh004/Age-calculator-app",

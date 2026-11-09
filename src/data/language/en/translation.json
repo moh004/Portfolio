@@ -1,0 +1,45 @@
+{
+    "navbar": {
+        "project" : "Project",
+        "about": "About",
+        "contact": "Contact",
+        "lang": "ENG"  
+    },
+    "heroDark": {
+        "intro": "Hi, I'm Mohsen.",
+        "script": "The North remembers. So should the things we build. I craft digital experiences with purpose, character, and an eye for the details that endure.",
+        "github-btn": "GitHub",
+        "email-btn": "Send a raven"
+    },
+    "heroLight": {
+        "intro": "Hi, I'm Mohsen.",
+        "script": "A Lannister always pays his debts. I ship what I promise. I turn ideas into fast, functional, and beautifully crafted websites. With clean code, considered design, smooth interactions, and an obsession with the details, I build digital experiences that do more than look good.",
+        "github-btn": "GitHub",
+        "email-btn": "Send a raven"
+    },
+    "project":{
+        "header": "Featured Projects",
+        "note": "Here are some of the projects I've built. Each one helped me learn something new.",
+        "viewAll": "View All Projects →"
+    },
+    "skills": {
+        "frontend": "Frontend Development",
+        "backend": "Backend Development",
+        "db": "Database & ORM",
+        "data": "Machine Learning & Data Science",
+        "tools": "Development & Testing Tools"
+    },
+    "contact": {
+        "contact": "Contact",
+        "h1": "Let's Get In Touch.",
+        "p1": "Have a project in mind, a question, or just want to say hello? My inbox is always open.",
+        "h2": "Let's build something great.",
+        "p2": "I'm always interested in new opportunities, collaborations, and interesting projects. Feel free to reach out.",
+        "name-input": "Your Name",
+        "email-input": "Email Address",
+        "msg-input": "Your Message",
+        "submit": "Send Message →" ,
+        "sending": "Sending..."
+    }
+
+}

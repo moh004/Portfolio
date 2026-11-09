@@ -1,7 +1,5 @@
 import { useMemo } from "react"
-
-// Uses the same Cinzel font as the dark hero (see the link comment in Hero.jsx)
-
+import { useTranslation } from "react-i18next"
 // ---------- helpers ----------
 function rng(seed) {
     return () => {
@@ -282,6 +280,7 @@ function City() {
 
 // ---------- hero ----------
 function HeroKingsLanding() {
+    const {t} = useTranslation()
     return (
         <section className="relative isolate min-h-screen overflow-hidden bg-gradient-to-b from-[#7fb6d6] via-[#f2d9a6] to-[#f7b777] text-[#3a0f14]">
             <style>{`
@@ -357,27 +356,23 @@ function HeroKingsLanding() {
                         className="text-4xl leading-tight text-[#4a0d14] md:text-6xl"
                         style={{ fontFamily: "Cinzel, 'Times New Roman', serif", fontWeight: 700 }}
                     >
-                        Hi, I'm Mohsen.
+                        {t("heroLight.intro")}
                     </h2>
                     <p className="mt-4 max-w-md text-lg leading-relaxed text-[#4a1c1c]">
-                        A Lannister always pays his debts. I ship what I promise.
-                        I turn ideas into fast, functional, and beautifully crafted websites. 
-                        With clean code, considered design, smooth interactions, 
-                        and an obsession with the details, I build digital experiences 
-                        that do more than look good.
+                         {t("heroLight.script")}
                     </p>
                     <div className="mt-8 flex flex-wrap gap-4">
                         <a
                             href="https://github.com/moh004"
                             className="rounded-sm border border-[#7a1620] bg-[#a3202b] px-6 py-3 font-semibold text-[#fbe7b0] transition hover:bg-[#7a1620] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#7a1620]"
                         >
-                            GitHub
+                             {t("heroLight.github-btn")}
                         </a>
                         <a
                             href="mailto:godofservertheimmortal@gmail.com"
                             className="rounded-sm border border-[#a3202b] bg-[#fff3d6]/70 px-6 py-3 font-semibold text-[#7a1620] transition hover:bg-[#fff3d6] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#7a1620]"
                         >
-                            Send a raven
+                             {t("heroLight.email-btn")}
                         </a>
                     </div>
                 </div>

@@ -1,9 +1,11 @@
 
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
     const form = useRef();
+    const {t} = useTranslation()
 
     const [status, setStatus] = useState("");
     const [loading, setLoading] = useState(false);
@@ -46,16 +48,15 @@ function Contact() {
                 {/* Heading */}
                 <div className="mb-14">
                     <span className="text-sm uppercase tracking-[0.3em] text-[var(--Accent)]">
-                        Contact
+                       {t("contact.contact")}
                     </span>
 
                     <h2 className="text-4xl md:text-5xl font-bold mt-3">
-                        Let's Get In Touch.
+                        {t("contact.h1")}
                     </h2>
 
                     <p className="mt-4 text-[var(--Muted)] max-w-xl">
-                        Have a project in mind, a question, or just want
-                        to say hello? My inbox is always open.
+                        {t("contact.p1")}
                     </p>
                 </div>
 
@@ -67,13 +68,11 @@ function Contact() {
 
                         <div>
                             <h3 className="text-2xl font-semibold mb-4">
-                                Let's build something great.
+                                {t("contact.h2")}
                             </h3>
 
                             <p className="text-[var(--Muted)] leading-relaxed max-w-md">
-                                I'm always interested in new opportunities,
-                                collaborations, and interesting projects.
-                                Feel free to reach out.
+                                {t("contact.p2")}
                             </p>
                         </div>
 
@@ -127,7 +126,7 @@ function Contact() {
                                 htmlFor="name"
                                 className="block text-sm font-medium mb-2"
                             >
-                                Your Name
+                                {t("contact.name-input")}
                             </label>
 
                             <input
@@ -145,7 +144,7 @@ function Contact() {
                                 htmlFor="email"
                                 className="block text-sm font-medium mb-2"
                             >
-                                Email Address
+                                {t("contact.email-input")}
                             </label>
 
                             <input
@@ -163,7 +162,7 @@ function Contact() {
                                 htmlFor="message"
                                 className="block text-sm font-medium mb-2"
                             >
-                                Your Message
+                                {t("contact.msg-input")}
                             </label>
 
                             <textarea
@@ -181,7 +180,7 @@ function Contact() {
                             disabled={loading}
                             className="w-full bg-[var(--Accent)] text-white font-semibold py-3 rounded-lg hover:opacity-90 transition disabled:opacity-50 disabled:cursor-not-allowed"
                         >
-                            {loading ? "Sending..." : "Send Message →"}
+                            {loading ? t("contact.sending") : t("contact.submit") }
                         </button>
 
                         {status && (
